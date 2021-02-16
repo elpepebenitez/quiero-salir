@@ -11,3 +11,6 @@ Disclaimer legal:
     Si necesitan un consejo específico a su situación por favor busquen servicios de un abogado
     Nada de lo que sale en esta página se puede entender como consejo legal, y es posible que no esté 100% completo, quiero darles toda la información posible para que puedan tomar sus propias decisiones
 Fecha de actualización
+
+Setear Firebase
+Setear Domain
