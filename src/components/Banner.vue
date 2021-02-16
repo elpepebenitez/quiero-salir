@@ -1,115 +1,97 @@
 <template>
-  <div>
-    <div class="main-banner">
-      <div class="text-h1 text-light-green-8 bg-amber-3">
-        Conoce qué restricciones de movilidad están vigentes en Panamá
-      </div>
-      <p>
-        Nos parecía increible que NO existiese, después de tanto tiempo, un
-        lugar donde encontrar información actualizada sobres las restricciones
-        de movilidad por COVID
-      </p>
-      <p>
-        Así que YOLO, lo hicimos
-        <router-link to="/nosotros">nosotros</router-link> mismos
-      </p>
-    </div>
-    <div class="main-info">
-      <h2>¿Qué puedes y qué no puedes hacer?</h2>
-      <p>
-        De la telaraña de Decretos y Resolucions recogimos la última
-        <router-link to="/normativa">normativa</router-link> para poder resumir
-        las restricciones que se aplican actualmente
-      </p>
-      <p>Actualizado al 16 de febrero de 2021</p>
-      <div class="container">
-        <div class="nacional">
-          <h3>A nivel nacional</h3>
+    <div>
+        <div class="main-banner">
+            <h1>Conoce qué restricciones de movilidad están vigentes en Panamá</h1>
+            <p>Nos parecía increible que NO existiese, después de tanto tiempo, un lugar donde encontrar información actualizada sobres las restricciones de movilidad por COVID</p>
+            <p>Así que YOLO, lo hicimos <router-link to="/nosotros">nosotros</router-link>  mismos</p>
         </div>
-        <div class="row">
-          <div class="col">
-            <h3>Panamá, Panamá Oeste, Coclé, Herrera, Los Santos y Veraguas</h3>
-          </div>
-          <div class="col">
-            <h3>Otras provincias</h3>
-          </div>
+        <div class="main-info">
+            <h2>¿Qué puedes y qué no puedes hacer?</h2>
+            <p>De la telaraña de Decretos y Resolucions recogimos la última <router-link to="/normativa">normativa</router-link> para poder resumir las restricciones que se aplican actualmente</p>
+            <p>Actualizado al 16 de febrero de 2021</p>
+            <div class="container">
+                <div class="nacional">
+                    <h3>A nivel nacional</h3>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Panamá, Panamá Oeste, Coclé, Herrera, Los Santos y Veraguas</h3>
+                    </div>
+                    <div class="col">
+                        <h3>Otras provincias</h3>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="main-activities">
+            <div>
+                <h2>Actividades Abiertas Fuera de Cuarentena</h2>
+                <p>Estas son las actividades que se han abierto, pero sólo se pueden realizar fuera del periodo de cuarentena y toque de queda</p>
+                <Search />
+            </div>
+            <div>
+                <h2>Actividades Excentas de Restricciones</h2>
+                <p>Estas son las actividades que pueden operar aun en periodo de cuarentena y toque de queda</p>
+                <Search />
+            </div>
+        </div>
     </div>
-    <div class="main-activities">
-      <div>
-        <h2>Actividades Abiertas Fuera de Cuarentena</h2>
-        <p>
-          Estas son las actividades que se han abierto, pero sólo se pueden
-          realizar fuera del periodo de cuarentena y toque de queda
-        </p>
-        <Search />
-      </div>
-      <div>
-        <h2>Actividades Excentas de Restricciones</h2>
-        <p>
-          Estas son las actividades que pueden operar aun en periodo de
-          cuarentena y toque de queda
-        </p>
-        <Search />
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
-import Search from "@/components/Search.vue";
+import Search from '@/components/Search.vue'
 
 export default {
-  name: "Banner",
+  name: 'Banner',
   data() {
-    return {
-      actividades_abiertas: [
-        "Restaurantes y fondas",
-        "Industria de construcción, actividades relacionadas y cadena de suministro.",
-        "Servicios Administrativos Generales: Alquiler de automóviles y otro equipo de transporte",
-        "Servicios Administrativos Generales: Alquiler y centros de alquiler de bienes muebles",
-        "Servicios Administrativos Generales: Servicios de apoyo a los negocios",
-        "Servicios Administrativos Generales: Agencias de Viaje y servicios de reservaciones",
-        "Servicios Administrativos Generales: Promotores, agentes y representantes de espectáculos artísticos, deportivos, académicos y similares",
-        "Servicios Administrativos Generales: Investigación científica y desarrollo",
-        "Servicios Administrativos Generales: Marketing y publicidad",
-        "Servicios Administrativos Generales: Consultorías",
-        "Servicios Administrativos Generales: Servicios de copiado, de archivo y custodia de documentos",
-        "Servicios Administrativos Generales: Organizaciones No Gubernamentales",
-        "Servicios profesionales con idoneidad",
-        "Servicios Técnicos: Talleres de mecánica, chapistería, electromecánica, refrigeración",
-        "Servicios Técnicos: Plomería",
-        "Servicios Técnicos: Electricidad",
-        "Servicios Técnicos: Sistemas de refrigeración y aire acondicionado",
-        "Servicios Técnicos: Ascensores",
-        "Servicios Técnicos: Limpieza de piscinas",
-        "Servicios prestados a domicilio: Limpieza y jardinería",
-        "Servicios prestados a domicilio: Lavanderías",
-        "Servicios prestados a domicilio: Terapias médicas",
-        "Lugares de culto, con aforo de 25%",
-        "Deportes al aire libre sin contacto físico",
-        "Comercio al por mayor con entrega exclusiva a establecimientos comerciales permitidos",
-        "Comercio al por menor de forma presencial",
-        "Salas de belleza y barberías",
-        "Centros de Atención Integral a la Primera Infancia (CAIPIS). Con autorización del MIDES.",
-        "Carreras, apuestas, y actividades realizadas en el Hipódromo Presidente Remón",
-        "Venta de chances y billetes por la Lotería Nacional",
-        "Lava autos",
-        "Sastrerías",
-        "Zapaterías",
-        "Industrias Creativas y Culturales, con excepción de cines.",
-        "Industrias en general",
-      ],
-      exentas: [],
-    };
+        return {
+            actividades_abiertas: [
+                'Restaurantes y fondas',
+                'Industria de construcción, actividades relacionadas y cadena de suministro.',
+                'Servicios Administrativos Generales: Alquiler de automóviles y otro equipo de transporte',
+                'Servicios Administrativos Generales: Alquiler y centros de alquiler de bienes muebles',
+                'Servicios Administrativos Generales: Servicios de apoyo a los negocios',
+                'Servicios Administrativos Generales: Agencias de Viaje y servicios de reservaciones',
+                'Servicios Administrativos Generales: Promotores, agentes y representantes de espectáculos artísticos, deportivos, académicos y similares',
+                'Servicios Administrativos Generales: Investigación científica y desarrollo',
+                'Servicios Administrativos Generales: Marketing y publicidad',
+                'Servicios Administrativos Generales: Consultorías',
+                'Servicios Administrativos Generales: Servicios de copiado, de archivo y custodia de documentos',
+                'Servicios Administrativos Generales: Organizaciones No Gubernamentales',
+                'Servicios profesionales con idoneidad',
+                'Servicios Técnicos: Talleres de mecánica, chapistería, electromecánica, refrigeración',
+                'Servicios Técnicos: Plomería',
+                'Servicios Técnicos: Electricidad',
+                'Servicios Técnicos: Sistemas de refrigeración y aire acondicionado',
+                'Servicios Técnicos: Ascensores',
+                'Servicios Técnicos: Limpieza de piscinas',
+                'Servicios prestados a domicilio: Limpieza y jardinería',
+                'Servicios prestados a domicilio: Lavanderías',
+                'Servicios prestados a domicilio: Terapias médicas',
+                'Lugares de culto, con aforo de 25%',
+                'Deportes al aire libre sin contacto físico',
+                'Comercio al por mayor con entrega exclusiva a establecimientos comerciales permitidos',
+                'Comercio al por menor de forma presencial',
+                'Salas de belleza y barberías',
+                'Centros de Atención Integral a la Primera Infancia (CAIPIS). Con autorización del MIDES.',
+                'Carreras, apuestas, y actividades realizadas en el Hipódromo Presidente Remón',
+                'Venta de chances y billetes por la Lotería Nacional',
+                'Lava autos',
+                'Sastrerías',
+                'Zapaterías',
+                'Industrias Creativas y Culturales, con excepción de cines.',
+                'Industrias en general'],
+            exentas: []
+        }
   },
   components: {
-    Search,
+      Search
   },
-  props: {},
-};
+  props: {}
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+
+</style>
