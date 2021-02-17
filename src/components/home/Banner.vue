@@ -1,12 +1,15 @@
 <template>
-    <div>
-        <div class="main-banner">
-            <div class="b-container">
-                <h1>Restricciones de movilidad vigentes en Panamá</h1>
-                <p>Nos parecía increible que NO existiese, después de tanto tiempo, un lugar donde encontrar información actualizada sobres las restricciones de movilidad por COVID</p>
-                <p>Así que lo hicimos <router-link to="/nosotros">nosotros</router-link>  mismos</p>
-            </div>
-        </div>
+    <div  class="main-banner">
+        <b-container>
+            <b-row>
+                <b-col>
+                    <h1>Restricciones de movilidad vigentes en Panamá</h1>
+                    <p>Nos parecía increible que NO existiese, después de tanto tiempo, un lugar donde encontrar información actualizada sobres las restricciones de movilidad por COVID</p>
+                    <p>Así que lo hicimos
+                        <b-button variant="outline-primary" size="sm" href="/nosotros">nosotros</b-button> mismos</p>
+                </b-col>
+            </b-row>
+        </b-container>
     </div>
 </template>
 
@@ -111,9 +114,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .main-banner {
-        height: 400px;
         background-size: cover;
         background-position: center;
-        padding: 100px 0;
+        padding: 50px 0;
+        border-bottom: 1px solid #027BFF;
     }
 </style>

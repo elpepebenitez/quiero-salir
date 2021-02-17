@@ -1,10 +1,16 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Restricciones</router-link> |
-      <router-link to="/nosotros">Nosotros</router-link> |
-      <router-link to="/normativa">Normativa</router-link>
-    </div>
+    <b-container fluid>
+      <b-row id="nav">
+          <b-col>
+            <router-link to="/">Restricciones</router-link>
+            <router-link to="/nosotros">Nosotros</router-link>
+            <router-link to="/normativa">Normativa</router-link>
+            <b-button href="#" variant="outline-primary" size="sm" id="dona">Dona</b-button>
+          </b-col>
+      </b-row>
+    </b-container>
+
     <router-view/>
     <Footer />
   </div>
@@ -29,16 +35,22 @@ export default {
 }
 
 #nav {
-  padding: 30px;
+  padding: 15px;
+  border-bottom: 1px solid #027BFF;
 }
 
 #nav a {
   font-weight: bold;
   color: #2c3e50;
-  padding: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #027BFF;
+}
+
+#dona:hover {
+  color: white;
 }
 </style>

@@ -1,22 +1,21 @@
 <template>
-    <div>
-        <div class="main-activities">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <h2>Actividades Abiertas Fuera de Cuarentena</h2>
-                        <p>Estas son las actividades que se han abierto, pero sólo se pueden realizar fuera del periodo de cuarentena y toque de queda</p>
-                        <Search />
-                    </div>
-                    <div class="col-6">
-                        <h2>Actividades Excentas de Restricciones</h2>
-                        <p>Estas son las actividades que pueden operar aun en periodo de cuarentena y toque de queda</p>
-                        <Search />
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="main-activities">
+        <b-container fluid>
+            <b-row>
+                <b-col>
+                    <h2>Actividades Abiertas Fuera de Cuarentena</h2>
+                    <p>Estas son las actividades que se han abierto, pero sólo se pueden realizar fuera del periodo de cuarentena y toque de queda</p>
+                    <Search />
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col>
+                    <h2>Actividades Excentas de Restricciones</h2>
+                    <p>Estas son las actividades que pueden operar aun en periodo de cuarentena y toque de queda</p>
+                    <Search />
+                </b-col>
+            </b-row>
+        </b-container>
     </div>
 </template>
 
@@ -110,7 +109,8 @@ export default {
                 'Ferreterías y empresas que les abastezcan',
                 'Servicios de entrega a domicilio utilizados para expendio de alimentos y medicamentos podrán operar hasta las 10pm.',
                 'Controladoras de plagas domésticas, industriales y/o marítimas (fumigadoras)',
-                'Mantenimiento y reparación de elevadores, tanques de agua, plantas eléctricas e instalaciones de gas']
+                'Mantenimiento y reparación de elevadores, tanques de agua, plantas eléctricas e instalaciones de gas'],
+            text: '',
         }
   },
   components: {
@@ -123,6 +123,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .main-activities {
-        height: 400px;
+        padding-top: 40px;
+        border-bottom: 1px solid #027BFF; 
     }
 </style>

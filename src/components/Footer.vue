@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <!-- Footer -->
-    <footer class="bg-light text-center text-lg-start">
+    <footer class="text-center text-lg-start">
       <!-- Grid container -->
       <div class="container p-4">
         <!--Grid row-->
@@ -32,9 +32,6 @@
               <li>
                 <a href="#!" class="text-dark">Link 3</a>
               </li>
-              <li>
-                <a href="#!" class="text-dark">Link 4</a>
-              </li>
             </ul>
           </div>
           <!--Grid column-->
@@ -61,5 +58,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    background-color: #3294FF;
+    color: white;
   }
 </style>
