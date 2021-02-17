@@ -2,20 +2,23 @@
   <div class="about">
     <h1>Esta es la normativa que utilizamos</h1>
     <p>Actualizado al 16 de febrero de 2021</p>
-    <div>
-        <div v-for="decreto in decretos" :key="decreto">
-            <p>{{ decreto.nombre }} del {{ decreto.institucion }}</p>
-            <p>{{ decreto.titulo }}</p>
-            <p>Publicado en Gaceta {{ decreto.gaceta }} el {{ decreto.fecha }}</p>
-            <p>Pueden encontrarlo en:</p>
-            <ul>
-                <li>{{ decreto.link }}</li>
-                <li>{{ decreto.infojuridica }}</li>
-            </ul>
-            <p>Modificaciones:</p>
-            <ul>
-                <li v-for="modificacion in decreto.modificaciones" :key="modificacion">{{ modificacion }}</li>
-            </ul>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-6" v-for="decreto in decretos" :key="decreto">
+                <p>{{ decreto.nombre }} del {{ decreto.institucion }}</p>
+                <p>{{ decreto.titulo }}</p>
+                <p>Publicado en Gaceta {{ decreto.gaceta }} el {{ decreto.fecha }}</p>
+                <p>Pueden encontrarlo en:</p>
+                <ul>
+                    <li>{{ decreto.link }}</li>
+                    <li>{{ decreto.infojuridica }}</li>
+                </ul>
+                <p>Modificaciones:</p>
+                <ul>
+                    <li v-for="modificacion in decreto.modificaciones" :key="modificacion">{{ modificacion }}</li>
+                </ul>
+            </div>
         </div>
     </div>
   </div>
@@ -100,3 +103,7 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+
+</style>
