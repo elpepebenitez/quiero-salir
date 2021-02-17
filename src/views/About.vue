@@ -1,13 +1,13 @@
 <template>
-  <div class="about">
-    <h1>Lola y Pepe</h1>
-    <div class="b-container">
+    <div class="about">
+      <h1>Lola y Pepe</h1>
       <div class="row">
         <div class="col-6">
             <div class="mb-2">
               <b-avatar src="https://media-exp1.licdn.com/dms/image/C4E03AQGfsEIg5G1pGQ/profile-displayphoto-shrink_200_200/0/1589277043248?e=1619049600&v=beta&t=TSTc17AOYZxVAS37UkF1C9JUaG5fynWk5X0zVwMwGa4" size="12rem"></b-avatar>
             </div>
             <div class="description">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam recusandae eaque pariatur quisquam error veniam, non aspernatur incidunt. Illum, fugit enim? Facilis, corporis! Perspiciatis dolorum rem mollitia, explicabo voluptatibus consequatur.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam recusandae eaque pariatur quisquam error veniam, non aspernatur incidunt. Illum, fugit enim? Facilis, corporis! Perspiciatis dolorum rem mollitia, explicabo voluptatibus consequatur.</p>
             </div>
             <div class="links">
@@ -24,6 +24,7 @@
             </div>
             <div class="description">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laudantium autem eaque repellat voluptates impedit. Tenetur expedita, veritatis, consectetur vero dicta provident ad aliquid vel repellat possimus, accusantium quas fugiat.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laudantium autem eaque repellat voluptates impedit. Tenetur expedita, veritatis, consectetur vero dicta provident ad aliquid vel repellat possimus, accusantium quas fugiat.</p>
             </div>
             <div class="links">
               <a href="#"><i class="fab fa-github"></i></a>
@@ -35,7 +36,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -72,9 +72,11 @@ export default {
 </script>
 
 <style>
-
+.about {
+  padding-top: 40px;
+}
 .links {
-  display: flex;
+  display: inline;
   align-items: center;
 }
 .links a {
