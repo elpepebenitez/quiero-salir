@@ -3,8 +3,11 @@
     <b-container>      
       <h3>Encuentra la actividad que buscas</h3>
       <b-form-input v-model="text" size="sm" placeholder="Actividad" id="input"></b-form-input>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id reiciendis aliquam inventore numquam veniam, harum dolorum quis voluptas. Veritatis, eius nisi! Reiciendis debitis corporis quibusdam consequuntur optio saepe recusandae enim.</p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id reiciendis aliquam inventore numquam veniam, harum dolorum quis voluptas. Veritatis, eius nisi! Reiciendis debitis corporis quibusdam consequuntur optio saepe recusandae enim.</p>
+      <b-row>
+        <b-col>
+          <span v-for="activity in activities" :key="activity">● {{ activity }}</span>
+        </b-col>
+      </b-row>
     </b-container>
   </div>
 </template>
@@ -15,9 +18,9 @@ export default {
   data() {
     return {
       text: '',
+      activities: [],
     }
   },
-  props: {},
 }
 </script>
 

@@ -1,6 +1,8 @@
 <template>
     <div class="about">
       <h1>Lola y Pepe</h1>
+      <p>Nos parecía increible que NO existiese, después de tanto tiempo, un lugar donde encontrar información actualizada sobres las restricciones de movilidad por COVID</p>
+      <p>Así que lo hicimos nosotros mismos</p>
       <div class="row">
         <div class="col-6">
             <div class="mb-2">

@@ -2,7 +2,8 @@
   <div class="home">
     <Banner />
     <Restrictions />
-    <Activities />
+    <OpenActivities />
+    <ExemptActivities />
     <Travellers />
 
   </div>
@@ -13,7 +14,8 @@
 // import HelloWorld from '@/components/HelloWorld.vue'
 import Banner from '@/components/home/Banner.vue'
 import Restrictions from '@/components/home/Restrictions.vue'
-import Activities from '@/components/home/Activities.vue'
+import OpenActivities from '@/components/home/OpenActivities.vue'
+import ExemptActivities from '@/components/home/ExemptActivities.vue'
 import Travellers from '@/components/home/Travellers.vue'
 
 export default {
@@ -21,7 +23,8 @@ export default {
   components: {
     Banner,
     Restrictions,
-    Activities,
+    OpenActivities,
+    ExemptActivities,
     Travellers
   }
 }
