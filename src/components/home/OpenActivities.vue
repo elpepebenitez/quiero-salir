@@ -1,0 +1,84 @@
+<template>
+    <div class="main-activities">
+        <b-container fluid>
+            <b-row>
+                <b-col>
+                    <h2>Actividades Abiertas Fuera de Cuarentena</h2>
+                    <p>Estas son las actividades que se han abierto, pero sólo se pueden realizar fuera del periodo de cuarentena y toque de queda</p>
+                </b-col>
+            </b-row>
+            <b-row>
+                <b-col>
+                <h3>Encuentra la actividad que buscas</h3>
+                <b-form-input v-model="text" size="sm" placeholder="Actividad" id="input"></b-form-input>
+                <p>
+                    <span v-for="activity in actividades_abiertas" :key="activity">● {{ activity }} </span>
+                </p>
+                </b-col>
+            </b-row>
+        </b-container>
+    </div>
+</template>
+
+<script>
+
+export default {
+  name: 'Banner',
+  data() {
+        return {
+            actividades_abiertas: [
+                'Restaurantes y fondas',
+                'Industria de construcción, actividades relacionadas y cadena de suministro.',
+                'Servicios Administrativos Generales: Alquiler de automóviles y otro equipo de transporte',
+                'Servicios Administrativos Generales: Alquiler y centros de alquiler de bienes muebles',
+                'Servicios Administrativos Generales: Servicios de apoyo a los negocios',
+                'Servicios Administrativos Generales: Agencias de Viaje y servicios de reservaciones',
+                'Servicios Administrativos Generales: Promotores, agentes y representantes de espectáculos artísticos, deportivos, académicos y similares',
+                'Servicios Administrativos Generales: Investigación científica y desarrollo',
+                'Servicios Administrativos Generales: Marketing y publicidad',
+                'Servicios Administrativos Generales: Consultorías',
+                'Servicios Administrativos Generales: Servicios de copiado, de archivo y custodia de documentos',
+                'Servicios Administrativos Generales: Organizaciones No Gubernamentales',
+                'Servicios profesionales con idoneidad',
+                'Servicios Técnicos: Talleres de mecánica, chapistería, electromecánica, refrigeración',
+                'Servicios Técnicos: Plomería',
+                'Servicios Técnicos: Electricidad',
+                'Servicios Técnicos: Sistemas de refrigeración y aire acondicionado',
+                'Servicios Técnicos: Ascensores',
+                'Servicios Técnicos: Limpieza de piscinas',
+                'Servicios prestados a domicilio: Limpieza y jardinería',
+                'Servicios prestados a domicilio: Lavanderías',
+                'Servicios prestados a domicilio: Terapias médicas',
+                'Lugares de culto, con aforo de 25%',
+                'Deportes al aire libre sin contacto físico',
+                'Comercio al por mayor con entrega exclusiva a establecimientos comerciales permitidos',
+                'Comercio al por menor de forma presencial',
+                'Salas de belleza y barberías',
+                'Centros de Atención Integral a la Primera Infancia (CAIPIS). Con autorización del MIDES.',
+                'Carreras, apuestas, y actividades realizadas en el Hipódromo Presidente Remón',
+                'Venta de chances y billetes por la Lotería Nacional',
+                'Lava autos',
+                'Sastrerías',
+                'Zapaterías',
+                'Industrias Creativas y Culturales, con excepción de cines.',
+                'Industrias en general'],
+            text: '',
+        }
+  },
+  components: {
+  },
+  props: {}
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+    .main-activities {
+        padding-top: 40px;
+        border-bottom: 1px solid #027BFF; 
+    }
+    #input {
+        width: 150px;
+        display: inline;
+    }
+</style>

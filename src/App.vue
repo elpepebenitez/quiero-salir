@@ -6,7 +6,6 @@
             <router-link to="/">Restricciones</router-link>
             <router-link to="/nosotros">Nosotros</router-link>
             <router-link to="/normativa">Normativa</router-link>
-            <b-button href="#" variant="outline-primary" size="sm" id="dona">Dona</b-button>
           </b-col>
       </b-row>
     </b-container>
