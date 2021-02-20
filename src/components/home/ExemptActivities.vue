@@ -12,7 +12,7 @@
                 <h3>Encuentra la actividad que buscas</h3>
                 <b-form-input v-model="exemptActivitiesText" size="sm" placeholder="Actividad Exenta" id="exempt_activity_input"></b-form-input>
                 <p>
-                    <span v-for="exempt_activity in actividades_exentas" :key="exempt_activity">● {{ exempt_activity }} </span>
+                    <span v-for="exempt_activity in filterExemptActivities" :key="exempt_activity">● {{ exempt_activity }} </span>
                 </p>
                 </b-col>
             </b-row>
@@ -79,7 +79,6 @@ export default {
   },
   computed: {
         filterExemptActivities() {
-            console.log(this.exemptActivitiesText)
             return this.actividades_exentas.filter(
                 activity => 
                     activity.toLowerCase().includes(this.exemptActivitiesText.toLowerCase())

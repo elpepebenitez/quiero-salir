@@ -12,7 +12,7 @@
                 <h3>Encuentra la actividad que buscas</h3>
                 <b-form-input v-model="openActivitiesText" size="sm" placeholder="Actividad Abierta" id="open_activity_input"></b-form-input>
                 <p>
-                    <span v-for="open_activity in actividades_abiertas" :key="open_activity">● {{ open_activity }} </span>
+                    <span v-for="open_activity in filterOpenActivities" :key="open_activity">● {{ open_activity }} </span>
                 </p>
                 </b-col>
             </b-row>
@@ -62,17 +62,28 @@ export default {
                 'Zapaterías',
                 'Industrias Creativas y Culturales, con excepción de cines.',
                 'Industrias en general'],
+            clean_activity_data: [],
             openActivitiesText: '',
         }
   },
+  methods: {
+      cleanData() {
+          this.actividades_abiertas.forEach(act => {
+              const clean_activity = act.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+              this.clean_activity_data.push(clean_activity)
+          })
+      },
+  },
   computed: {
       filterOpenActivities() {
-          console.log(this.openActivitiesText)
           return this.actividades_abiertas.filter(
                 activity => 
                     activity.toLowerCase().includes(this.openActivitiesText.toLowerCase())
             ) 
         },
+    },
+    mounted() {
+       this.cleanData() 
     },
 }
 </script>
