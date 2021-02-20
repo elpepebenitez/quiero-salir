@@ -10,9 +10,9 @@
             <b-row>
                 <b-col>
                 <h3>Encuentra la actividad que buscas</h3>
-                <b-form-input v-model="text" size="sm" placeholder="Actividad" id="input"></b-form-input>
+                <b-form-input v-model="exemptActivitiesText" size="sm" placeholder="Actividad Exenta" id="exempt_activity_input"></b-form-input>
                 <p>
-                    <span v-for="activity in exentas" :key="activity">● {{ activity }} </span>
+                    <span v-for="exempt_activity in actividades_exentas" :key="exempt_activity">● {{ exempt_activity }} </span>
                 </p>
                 </b-col>
             </b-row>
@@ -23,20 +23,20 @@
 <script>
 
 export default {
-  name: 'Banner',
+  name: 'ExemptActivities',
   data() {
         return {
-            exentas: [
+            actividades_exentas: [
                 'Floristerías: Entregas a domicilio, sin entrada al público',
                 'Fuerza Pública',
                 'Servidores públicos dedicados a atender emergencias',
                 'Personal de salud; personal médico, administrativo y operativo de hospitales, emergencias móviles, centros de atención médica, clínicas y personal de laboratorios médicos, públicos o privados',
-                'Abogados idóneos para el ejercicio de personas detenidas por incidentes dentro del periodo de restricción de movilidad, que realicen gestiones ante el OJ, MP, Justicia Administrativa. Mostrar idoneidad.',
+                'Abogados idóneos para el ejercicio de personas detenidas por incidentes dentro del periodo de restricción de movilidad, que realicen gestiones ante el Órgano Judicial, Ministerio Público, Justicia Administrativa. Mostrar idoneidad.',
                 'Clínicas y servicios veterinarios.',
                 'Metro de Panamá y MiBus, personal administrativo y operativo, y contratistas.',
                 'Transporte público, colectivo y selectivo. Y transporte contratado para movilizar personal de empresas incluidas en excepciones.',
-                'Personal de la ACP y contratistas críticos.',
-                'Personal de ENA y Madden-Colón, sus proveedores y subcontratistas.',
+                'Personal de la Autoridad del Canal de Panamá y contratistas críticos.',
+                'Personal de Empresa Nacional de Autopístas y Madden-Colón, sus proveedores y subcontratistas.',
                 'Personal del Aeropuerto Int de Tocumen y Aeropuerto Int Marcos A. Gelabert, proveedores y subcontratistas y actividades relacionadas con las operaciones aéreas.',
                 'Personal de aerolíneas y actividades relacionadas',
                 'Pasajeros que ingresen al territorio nacional o deban salir del mismo, presentando boleto de avión y pasaporte.',
@@ -74,12 +74,18 @@ export default {
                 'Servicios de entrega a domicilio utilizados para expendio de alimentos y medicamentos podrán operar hasta las 10pm.',
                 'Controladoras de plagas domésticas, industriales y/o marítimas (fumigadoras)',
                 'Mantenimiento y reparación de elevadores, tanques de agua, plantas eléctricas e instalaciones de gas'],
-            text: '',
+            exemptActivitiesText: '',
         }
   },
-  components: {
-  },
-  props: {}
+  computed: {
+        filterExemptActivities() {
+            console.log(this.exemptActivitiesText)
+            return this.actividades_exentas.filter(
+                activity => 
+                    activity.toLowerCase().includes(this.exemptActivitiesText.toLowerCase())
+            ) 
+        },
+    },
 }
 </script>
 
@@ -89,7 +95,7 @@ export default {
         padding-top: 40px;
         border-bottom: 1px solid #027BFF; 
     }
-    #input {
+    #exempt_activity_input {
         width: 150px;
         display: inline;
     }
