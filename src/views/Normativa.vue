@@ -1,26 +1,28 @@
 <template>
   <div class="about">
     <h1>Esta es la normativa que utilizamos</h1>
-    <p>Actualizado al 16 de febrero de 2021</p>
+    <p>Actualizado al 21 de febrero de 2021</p>
     
-    <div class="container">
-        <div class="row">
-            <div class="col-6" v-for="decreto in decretos" :key="decreto">
-                <p>{{ decreto.nombre }} del {{ decreto.institucion }}</p>
-                <p>{{ decreto.titulo }}</p>
-                <p>Publicado en Gaceta {{ decreto.gaceta }} el {{ decreto.fecha }}</p>
-                <p>Pueden encontrarlo en:</p>
-                <ul>
-                    <li>{{ decreto.link }}</li>
-                    <li>{{ decreto.infojuridica }}</li>
-                </ul>
-                <p>Modificaciones:</p>
-                <ul>
-                    <li v-for="modificacion in decreto.modificaciones" :key="modificacion">{{ modificacion }}</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <b-container>
+        <b-row>
+            <b-col v-for="decreto in decretos" :key="decreto">
+                <div class="card">
+                    <p id="name">{{ decreto.nombre }} del {{ decreto.institucion }}</p>
+                    <p id="title">{{ decreto.titulo }}</p>
+                    <p id="publicado">Gaceta {{ decreto.gaceta }} el {{ decreto.fecha }}</p>
+                    <p>Pueden encontrarlo en:</p>
+                    <div style="display: inline-block;">
+                        <b-button :href="decreto.link" target="_blank" id="link" size="md">Gaceta</b-button>
+                        <b-button :href="decreto.infojuridica" target="_blank" id="link" size="md">Infojuridica</b-button>
+                    </div>
+                    <p id="mod">Modificaciones:</p>
+                    <p v-for="modificacion in decreto.modificaciones" :key="modificacion" id="mods">{{ modificacion }}</p>
+                </div>
+
+            </b-col>
+        </b-row>
+    </b-container>
+    
   </div>
 </template>
 
@@ -105,5 +107,40 @@ export default {
 </script>
 
 <style scoped>
-
+    h1 {
+        color: #F79E01;
+    }
+    .card {
+          overflow: hidden;
+          background: white;
+          box-shadow: 0 0 15px rgba(0,0,0,0.2);
+          display: flex;
+          align-items: center;
+          width: 350px;
+          margin: 0 auto;
+          margin-bottom: 16px;
+          padding: 16px;
+          border-radius: 10px;
+    }
+    #name {
+        margin-top: 8px;
+    }
+    #title {
+        color: black;
+        font-size: 12px;
+        color: #3294FF;
+    }
+    #link {
+        display: inline;
+        margin: 8px;
+        background-color: #F79E01;
+        border: 1px solid white;
+    }
+    #mod {
+        margin-top: 16px;
+    }
+    #mods {
+        font-size: 12px;
+        color: #3294FF;
+    }
 </style>

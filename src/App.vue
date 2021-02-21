@@ -31,11 +31,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #F8F9FB;
 }
 
 #nav {
   padding: 15px;
-  border-bottom: 1px solid #027BFF;
 }
 
 #nav a {
