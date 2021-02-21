@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-      <h3>Nos parecía increible que NO existiese, después de tanto tiempo, un lugar donde encontrar información actualizada sobres las restricciones de movilidad por COVID</h3>
+      <h3>Nos parecía increíble que NO existiese, después de tanto tiempo, un lugar donde encontrar información actualizada sobres las restricciones de movilidad por COVID</h3>
       <p>Así que lo hicimos nosotros mismos</p>
       <div class="row">
         <div class="col-6">
