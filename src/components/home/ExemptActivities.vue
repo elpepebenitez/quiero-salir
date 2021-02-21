@@ -4,14 +4,14 @@
             <b-row>
                 <b-col>
                     <h2>Actividades Excentas de Restricciones</h2>
-                    <h6>Estas son las actividades que pueden operar aun en periodo de cuarentena y toque de queda</h6>
                 </b-col>
             </b-row>
             <b-row>
                 <b-col>
-                <h3>Encuentra la actividad que buscas</h3>
-                <b-form-input v-model="exemptActivitiesText" size="sm" placeholder="Actividad Exenta" id="exempt_activity_input"></b-form-input>
-                <b-container>
+                <b-container class="card">
+                    <h5>Estas son las actividades que pueden operar siempre, aunque haya cuarentena y toque de queda</h5>
+                    <h6>Usa el buscador para encontrar la actividad que buscas 🔍</h6>
+                    <b-form-input v-model="exemptActivitiesText" size="sm" placeholder="Actividad Exenta" id="exempt_activity_input"></b-form-input>
                     <p>
                         <span v-for="exempt_activity in filterExemptActivities" :key="exempt_activity">● {{ exempt_activity }} </span>
                     </p>
@@ -104,5 +104,20 @@ export default {
     }
     span {
         font-size: 12px;
+    }
+    h6 {
+        color: #0074E0;
+    }
+    .card {
+          overflow: hidden;
+          background: white;
+          box-shadow: 0 0 15px rgba(0,0,0,0.2);
+          display: flex;
+          align-items: center;
+          width: 90%;
+          margin: 0 auto;
+          margin-bottom: 16px;
+          padding: 16px;
+          border-radius: 10px;
     }
 </style>

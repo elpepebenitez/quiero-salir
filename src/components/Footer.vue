@@ -15,19 +15,12 @@
 
                 </b-col>
                 <b-col>
-                  <p>Si tienes alguna sugerencia para mejorar el contenido déjanoslo saber, y agradecemos cualquier contribución para mantener esta página</p>
-                  <b-button v-b-modal.modal-center variant="warning" size="lg" id="dona" style="color: white; font-weight: 900;">Dona</b-button>
+                  <p>Si tienes alguna sugerencia para mejorar el contenido déjanoslo saber <b-button href="https://wa.me/50766786283" variant="success" size="sm" target="_blank" style="color: white; font-weight: 900; display: inline;"><i class="fab fa-whatsapp"></i></b-button>  </p>
+                  <p>También agradecemos cualquier contribución para mantener esta página</p>
+                  <b-button v-b-modal.modal-center variant="warning" size="lg" id="dona" style="color: white; font-weight: 900;">Apóyanos</b-button>
 
                 </b-col>
               </b-row>
-              
-              <!-- 
-                Las infografías que van por ahí no son confiables; es importante saber qué es lo último legalmente
-                Si necesitan un consejo específico a su situación por favor busquen servicios de un abogado
-                Nada de lo que sale en esta página se puede entender como consejo legal, y es posible que no esté 100% completo, quiero darles toda la información posible para que puedan tomar sus propias decisiones
-                Déjanos saber si nos falta algo importante
-                Buy us a coffee
-              -->
             </b-container>
         </div>
         <!--Grid row-->
@@ -54,5 +47,7 @@
     width: 100%;
     background-color: #0074E0;
     color: white;
+    text-align: justify;
+    text-justify: inter-word;
   }
 </style>

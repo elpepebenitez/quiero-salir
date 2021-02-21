@@ -4,8 +4,6 @@
     <Restrictions />
     <OpenActivities />
     <ExemptActivities />
-    <Travellers />
-
   </div>
 </template>
 
@@ -16,7 +14,6 @@ import Banner from '@/components/home/Banner.vue'
 import Restrictions from '@/components/home/Restrictions.vue'
 import OpenActivities from '@/components/home/OpenActivities.vue'
 import ExemptActivities from '@/components/home/ExemptActivities.vue'
-import Travellers from '@/components/home/Travellers.vue'
 
 export default {
   name: 'Home',
@@ -25,7 +22,6 @@ export default {
     Restrictions,
     OpenActivities,
     ExemptActivities,
-    Travellers
   }
 }
 </script>
