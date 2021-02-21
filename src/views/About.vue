@@ -10,13 +10,13 @@
             </div>
             <div class="description">
               <h4>Abogada y Barista</h4>
+              <div class="links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, facilis doloribus. A corporis consequuntur id reprehenderit ipsum dicta in nesciunt molestias provident, aperiam sed vero placeat. Quos, reprehenderit! Veniam, voluptates?</p>
-            </div>
-            <div class="links">
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-facebook"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
         <div class="col-6">
@@ -25,14 +25,15 @@
               <b-avatar src="https://media-exp1.licdn.com/dms/image/C4E03AQHQufX9dh4RpA/profile-displayphoto-shrink_200_200/0/1595870368070?e=1619049600&v=beta&t=kx1iHsTzZN7V-eup8wXcNsu7ZLRHfX2kcTUIu6jJDYY" size="12rem"></b-avatar>
             </div>
             <div class="description">
-              <h4>Abogado y Desarrollador Web</h4>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, facilis doloribus. A corporis consequuntur id reprehenderit ipsum dicta in nesciunt molestias provident, aperiam sed vero placeat. Quos, reprehenderit! Veniam, voluptates?</p>
-            </div>
-            <div class="links">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <h4>Abogado y Desarrollador</h4>
+              <div class="links">
+                <a href="https://github.com/elpepebenitez"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/elpepebenitez"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/pepebenitez/"><i class="fab fa-linkedin"></i></a>
+              </div>
+              <p>Co Fundador de <b-button href="https://www.instagram.com/actapanama/?hl=en" variant="outline-primary" size="sm" target="_blank">ACTA Panamá</b-button></p>
+              <p>Guillao por el uso de tecnología y desarrollo sostenible</p>
+              <p>¡A la orden para tener una buena conversa siempre!</p>
             </div>
         </div>
       </div>

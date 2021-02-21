@@ -4,14 +4,14 @@
             <b-row>
                 <b-col>
                     <h2>Actividades Abiertas Fuera de Cuarentena</h2>
-                    <h6>Estas son las actividades que se han abierto, pero sólo se pueden realizar fuera del periodo de cuarentena y toque de queda</h6>
                 </b-col>
             </b-row>
             <b-row>
                 <b-col>
-                <h3>Encuentra la actividad que buscas</h3>
-                <b-form-input v-model="openActivitiesText" size="sm" placeholder="Actividad Abierta" id="open_activity_input"></b-form-input>
-                <b-container>
+                <b-container class="card">
+                    <h5>Estas son las actividades que se han abierto, pero sólo se pueden realizar en la semana cuando no hay cuarentena y toque de queda</h5>
+                    <h6>Usa el buscador para encontrar la actividad que buscas 🔍</h6>
+                    <b-form-input v-model="openActivitiesText" size="sm" placeholder="Actividad Abierta" id="open_activity_input"></b-form-input>
                     <p>
                         <span v-for="open_activity in filterOpenActivities" :key="open_activity">● {{ open_activity }} </span>
                     </p>
@@ -104,5 +104,20 @@ export default {
     }
     span {
         font-size: 12px;
+    }
+    h6 {
+        color: #0074E0;
+    }
+    .card {
+          overflow: hidden;
+          background: white;
+          box-shadow: 0 0 15px rgba(0,0,0,0.2);
+          display: flex;
+          align-items: center;
+          width: 90%;
+          margin: 0 auto;
+          margin-bottom: 16px;
+          padding: 16px;
+          border-radius: 10px;
     }
 </style>
