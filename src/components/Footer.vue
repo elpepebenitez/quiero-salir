@@ -6,35 +6,29 @@
       <div class="container p-4">
         <!--Grid row-->
         <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Footer Content</h5>
+            <b-container>
+              <h5 class="text-uppercase">¡Gracias por visitarnos!</h5>
+              <b-row>
+                <b-col>
+                  <p>Las infografías del MINSA son muy útiles, pero recuerda que lo que vale es lo establecido legalmente</p>
+                  <p>Tomen lo que aparece en esta página como una guía, pero si tienen dudas específicas sobre su situación por favor consulten con un profesional idóneo</p>
 
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-              voluptatem veniam, est atque cumque eum delectus sint!
-            </p>
-          </div>
-          <!--Grid column-->
+                </b-col>
+                <b-col>
+                  <p>Si tienes alguna sugerencia para mejorar el contenido déjanoslo saber, y agradecemos cualquier contribución para mantener esta página</p>
+                  <b-button v-b-modal.modal-center variant="warning" size="lg" id="dona" style="color: white; font-weight: 900;">Dona</b-button>
 
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-dark">Link 1</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 2</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Link 3</a>
-              </li>
-            </ul>
-          </div>
-          <!--Grid column-->
+                </b-col>
+              </b-row>
+              
+              <!-- 
+                Las infografías que van por ahí no son confiables; es importante saber qué es lo último legalmente
+                Si necesitan un consejo específico a su situación por favor busquen servicios de un abogado
+                Nada de lo que sale en esta página se puede entender como consejo legal, y es posible que no esté 100% completo, quiero darles toda la información posible para que puedan tomar sus propias decisiones
+                Déjanos saber si nos falta algo importante
+                Buy us a coffee
+              -->
+            </b-container>
         </div>
         <!--Grid row-->
       </div>
@@ -43,7 +37,7 @@
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2021 Copyright:
-        <a class="text-dark" href="#">quierosalir.info</a>
+        <a href="#" style="color: #F79E01;">quierosalir.info</a>
       </div>
       <!-- Copyright -->
     </footer>
@@ -58,7 +52,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    background-color: #3294FF;
+    background-color: #0074E0;
     color: white;
   }
 </style>
