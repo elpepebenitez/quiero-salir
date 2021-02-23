@@ -6,6 +6,7 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 Vue.config.productionTip = false
 
 import firebase from 'firebase/app'
+import 'firebase/analytics'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
@@ -27,6 +28,7 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig)
 
+firebase.analytics()
 
 new Vue({
   router,
