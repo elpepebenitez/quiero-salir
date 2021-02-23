@@ -3,7 +3,7 @@
         <b-container fluid>
             <b-row>
                 <b-col>
-                    <h2>Excentas de Restricciones</h2>
+                    <h2>Exentas de Restricciones</h2>
                 </b-col>
             </b-row>
             <b-row>

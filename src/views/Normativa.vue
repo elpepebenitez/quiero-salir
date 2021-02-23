@@ -126,7 +126,6 @@ export default {
           box-shadow: 0 0 15px rgba(0,0,0,0.2);
           display: flex;
           align-items: center;
-          width: 350px;
           margin: 0 auto;
           margin-bottom: 16px;
           padding: 16px;
