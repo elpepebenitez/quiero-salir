@@ -1,24 +1,18 @@
 <template>
   <div id="app">
-    <b-container fluid>
-      <b-row id="nav">
-          <b-col>
-            <router-link to="/">Restricciones</router-link>
-            <router-link to="/nosotros">Nosotros</router-link>
-            <router-link to="/normativa">Normativa</router-link>
-          </b-col>
-      </b-row>
-    </b-container>
-
+    <Nav />
     <router-view/>
     <Footer />
+
   </div>
 </template>
 
 <script>
+import Nav from '@/components/Nav.vue'
 import Footer from '@/components/Footer.vue'
 export default {
   components: {
+    Nav,
     Footer
   }
 }
@@ -26,30 +20,16 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   background-color: #F8F9FB;
 }
-
-#nav {
-  padding: 15px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-#nav a.router-link-exact-active {
-  color: #027BFF;
-}
-
-#dona:hover {
-  color: white;
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 </style>

@@ -11,13 +11,13 @@
               <b-row>
                 <b-col>
                   <p>Las infografías del MINSA son muy útiles, pero recuerda que lo que vale es lo establecido legalmente</p>
-                  <p>Tomen lo que aparece en esta página como una guía</p> 
-                  <p>Si tienen dudas específicas sobre su situación por favor consulten con un profesional idóneo</p>
+                  <p>Tomen lo que aparece en esta página como una guía básica</p> 
+                  <p>Para dudas específicas sobre su situación por favor consulten con un profesional idóneo</p>
 
                 </b-col>
                 <b-col>
-                  <p>Si tienes alguna sugerencia para mejorar el contenido déjanoslo saber <b-button href="https://wa.me/50766786283" variant="success" size="sm" target="_blank" style="color: white; font-weight: 900; display: inline;"><i class="fab fa-whatsapp"></i></b-button>  </p>
-                  <p>También agradecemos cualquier contribución para mantener esta página</p>
+                  <p>Si tienes sugerencias déjanoslo saber <b-button href="https://wa.me/50766786283" variant="success" size="sm" target="_blank" style="color: white; font-weight: 900; display: inline;"><i class="fab fa-whatsapp"></i></b-button>  </p>
+                  <p>Agradecemos cualquier contribución para mantener esta página</p>
                   <b-button v-b-modal.modal-footer variant="warning" size="lg" id="dona" style="color: white; font-weight: 900;">Apóyanos</b-button>
                 </b-col>
               </b-row>

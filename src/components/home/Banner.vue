@@ -33,13 +33,13 @@ export default {
     .main-banner {
         background-size: cover;
         background-position: center;
-        padding: 50px 0;
         background-color: #0074E0;
         color: white;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     h1 {
         padding-bottom: 25px;
-        font-size: 64px;
     }
     #h3 {
         padding-top: 50px;
