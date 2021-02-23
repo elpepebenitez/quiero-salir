@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>Esta es la normativa que utilizamos</h1>
-    <p>Actualizado al 21 de febrero de 2021</p>
+    <p>Actualizado al 23 de febrero de 2021</p>
     
     <b-container>
         <b-row>
@@ -31,6 +31,16 @@ export default {
     data() {
         return {
             decretos: [{
+                nombre: 'Decreto Ejecutivo 100 de 21 de febrero de 2021',
+                institucion: 'Ministerio de Salud',
+                titulo: 'QUE ORDENA LA REACTIVACIÓN DE ALGUNAS ACTIVIDADES EN LAS PROVINCIAS DE PANAMÁ Y PANAMÁ OESTE, A PARTIR DEL 22 DE FEBRERO DE 2021.',
+                gaceta: '29223',
+                fecha: '21 de febrero de 2021',
+                infojuridica: 'http://infojuridica.procuraduria-admon.gob.pa/norma_screen?numsec=55967',
+                link: 'http://gacetas.procuraduria-admon.gob.pa/29223_55967.pdf',
+                modificaciones: ['No ha sufrido modificaciones'],
+            },
+            {
                 nombre: 'Decreto Ejecutivo 74 de 12 de febrero de 2021',
                 institucion: 'Ministerio de Salud',
                 titulo: 'QUE ESTABLECE UNA EXTENSIÓN AL HORARIO DEL TOQUE DE QUEDA A NIVEL NACIONAL, A PARTIR DEL 15 DE FEBRERO DE 2021, SE DISPONEN OTRAS MEDIDAS SANITARIAS PARA LAS PROVINCIAS DE PANAMÁ, PANAMÁ OESTE, COCLÉ, HERRERA, LOS SANTOS Y VERAGUAS, Y SE DICTAN OTRAS DISPOSICIONES.',

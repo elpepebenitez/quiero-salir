@@ -3,14 +3,14 @@
         <b-container fluid>
             <b-row>
                 <b-col>
-                    <h2>Actividades Abiertas Fuera de Cuarentena</h2>
+                    <h2>Abiertas Fuera de Cuarentena</h2>
                 </b-col>
             </b-row>
             <b-row>
                 <b-col>
                 <b-container class="card">
-                    <h5>Estas son las actividades que se han abierto, pero sólo se pueden realizar en la semana cuando no hay cuarentena y toque de queda</h5>
-                    <h6>Usa el buscador para encontrar la actividad que buscas 🔍</h6>
+                    <h5>Actividades abiertas, pero sólo se pueden realizar cuando no hay cuarentena ni toque de queda</h5>
+                    <h6>Usa el buscador para encontrar la que buscas 🔍</h6>
                     <b-form-input v-model="openActivitiesText" size="sm" placeholder="Actividad Abierta" id="open_activity_input"></b-form-input>
                     <p>
                         <span v-for="open_activity in filterOpenActivities" :key="open_activity">● {{ open_activity }} </span>
@@ -29,6 +29,9 @@ export default {
   data() {
         return {
             actividades_abiertas: [
+                'Gimnasios',
+                'Salas de masajes, estéticas y Spa',
+                'Marinas y pesca deportiva',
                 'Restaurantes y fondas',
                 'Industria de construcción, actividades relacionadas y cadena de suministro.',
                 'Servicios Administrativos Generales: Alquiler de automóviles y otro equipo de transporte',

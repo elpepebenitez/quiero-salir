@@ -1,9 +1,10 @@
 <template>
     <div class="about">
-      <h3>Nos parecía increíble que NO existiese, después de tanto tiempo, un lugar donde encontrar información actualizada sobres las restricciones de movilidad por COVID</h3>
+      <h3>Increíble que después de tanto tiempo NO existiese donde encontrar información actualizada sobres las restricciones de movilidad por COVID</h3>
       <p>Así que lo hicimos nosotros mismos</p>
-      <div class="row">
-        <div class="col-6">
+      <b-container>
+        <b-row>
+          <b-col>
             <h2>Lola Arosemena</h2>
             <div class="mb-2">
               <b-avatar src="https://media-exp1.licdn.com/dms/image/C4E03AQGfsEIg5G1pGQ/profile-displayphoto-shrink_200_200/0/1589277043248?e=1619049600&v=beta&t=TSTc17AOYZxVAS37UkF1C9JUaG5fynWk5X0zVwMwGa4" size="12rem"></b-avatar>
@@ -16,8 +17,8 @@
               </div>
               <p>Feminista queer que lucha por la justicia social y tripea la guilla del café sostenible</p>
             </div>
-        </div>
-        <div class="col-6">
+          </b-col>
+          <b-col>
             <h2>Pepe Benítez</h2>
             <div class="mb-2">
               <b-avatar src="https://media-exp1.licdn.com/dms/image/C4E03AQHQufX9dh4RpA/profile-displayphoto-shrink_200_200/0/1595870368070?e=1619049600&v=beta&t=kx1iHsTzZN7V-eup8wXcNsu7ZLRHfX2kcTUIu6jJDYY" size="12rem"></b-avatar>
@@ -32,9 +33,11 @@
               <p>Co Fundador de <b-button href="https://www.instagram.com/actapanama/?hl=en" variant="outline-primary" size="sm" target="_blank">ACTA Panamá</b-button></p>
               <p>Guillao por el uso de tecnología y desarrollo sostenible</p>
             </div>
-        </div>
-      </div>
-      <h5 style="margin-bottom: 25px; margin-top: 25px;">¡Ambos estamos a la orden para tener una buena conversación siempre!</h5>
+
+          </b-col>
+        </b-row>
+      </b-container>
+      <h5 style="margin-bottom: 25px; margin-top: 25px;">¡Ambos estamos siempre a la orden para tener una buena conversación!</h5>
     </div>
 </template>
 
@@ -71,7 +74,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .about {
   padding-top: 40px;
 }
@@ -84,7 +87,8 @@ export default {
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
-  padding: 0px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .links a:hover {
   opacity: 1;

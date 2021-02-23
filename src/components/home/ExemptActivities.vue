@@ -3,14 +3,14 @@
         <b-container fluid>
             <b-row>
                 <b-col>
-                    <h2>Actividades Excentas de Restricciones</h2>
+                    <h2>Excentas de Restricciones</h2>
                 </b-col>
             </b-row>
             <b-row>
                 <b-col>
                 <b-container class="card">
-                    <h5>Estas son las actividades que pueden operar siempre, aunque haya cuarentena y toque de queda</h5>
-                    <h6>Usa el buscador para encontrar la actividad que buscas 🔍</h6>
+                    <h5>Actividades que pueden operar siempre, aunque haya cuarentena y toque de queda</h5>
+                    <h6>Usa el buscador para encontrar la que buscas 🔍</h6>
                     <b-form-input v-model="exemptActivitiesText" size="sm" placeholder="Actividad Exenta" id="exempt_activity_input"></b-form-input>
                     <p>
                         <span v-for="exempt_activity in filterExemptActivities" :key="exempt_activity">● {{ exempt_activity }} </span>
