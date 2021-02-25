@@ -2,6 +2,9 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 
+import firebase from 'firebase/app'
+import 'firebase/firebase-analytics'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -41,6 +44,11 @@ const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  firebase.analytics().logEvent(`${to.name.toLowerCase()}_page_visit`)
+  next()
 })
 
 export default router
