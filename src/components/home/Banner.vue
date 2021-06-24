@@ -3,7 +3,7 @@
         <b-container>
             <b-row>
                 <b-col>
-                    <h1>Restricciones de movilidad en Panamá</h1>
+                    <h1>Hello Uncommon!</h1>
                     <h4>Encuentra información actualizada sobre medidas tomadas por el COVID-19</h4>
                     <h3 id="h3">Ayúdanos a mantener esta página accesible para tod@s</h3>
                     <b-button v-b-modal.modal-banner variant="warning" size="lg" id="dona" style="color: white; font-weight: 900;">Cómpranos un café</b-button>
